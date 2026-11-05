@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { createRequire } from 'module';
 
-const require = createRequire(import.meta.url);
+var require = createRequire(import.meta.url);
+var module = { exports: {} };
 
 // https://vite.dev/config/
 export default defineConfig({
